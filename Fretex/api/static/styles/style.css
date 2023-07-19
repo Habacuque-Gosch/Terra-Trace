@@ -1,0 +1,240 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-texto);
+}
+
+:root {
+    --cor-destaque: #3d66a5;
+    --cor-texto: #020f22;
+}
+
+
+/* Scrollbar personalizada */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-destaque);
+    border-radius: 5px;
+}
+
+/* Animaçoes de entrada e saida de conteudo */
+
+[data-anima] {
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-anima="esquerda"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anima="direita"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anima="centro"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anima].animacao {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.tipo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    
+}
+
+.tipoi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 35px;
+    height:35px;
+}
+
+
+.endereco-busca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    gap: 7px;
+}
+
+form input {
+    outline: unset;
+    font-size: 14px;
+    padding: 8px 15px; 
+    width: 300px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 20px;
+}
+
+form select {
+    outline: unset;
+    padding: 8px 15px;
+    width: 300px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 20px;
+}
+
+form label {
+    font-size: 14px;
+    margin: 0 15px;
+
+}
+
+.btn-primary {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 20px;
+}
+
+.btn-primary {
+    text-decoration: none;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    width: 80%;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.5s;
+    height: 3em;
+    background-color: rgb(66, 133, 187);
+    margin-left: 2em;
+}
+
+.btn-primary:hover {
+    background-color: rgb(38, 103, 156);
+}
+
+
+.alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-heading {
+color: inherit;
+}
+
+.alert-link {
+font-weight: 700;
+}
+
+.alert-dismissible {
+padding-right: 3rem;
+}
+.alert-dismissible .btn-close {
+position: absolute;
+top: 0;
+right: 0;
+z-index: 2;
+padding: 1.25rem 1rem;
+}
+
+.alert-primary {
+color: #084298;
+background-color: #cfe2ff;
+border-color: #b6d4fe;
+}
+.alert-primary .alert-link {
+color: #06357a;
+}
+
+.alert-success {
+color: #188dbf;
+background-color: #d1e7dd;
+border-color: #badbcc;
+}
+
+.btn-confirmar {
+    text-decoration: none;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.5s;
+    height: 3em;
+    width: 40%;
+    background-color: rgb(66, 133, 187);
+}
+
+.solicitacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: -32em;
+}
+
+.btn-confirmar:hover {
+    background-color: rgb(38, 103, 156);
+}
+
+.mapa {
+    float: right;
+    margin-top: -25.2em;
+    margin-right: 5em;
+}
+
+@media screen and (max-width: 480px) {
+    .solicitacao {
+        margin-left: 1em;
+        margin-top: -10em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mapa {
+        width: 250;
+        height: 270;
+        margin-right: 10px;
+        margin-top: -10em;
+        float: none;
+    }
+}

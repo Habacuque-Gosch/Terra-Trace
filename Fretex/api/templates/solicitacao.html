@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %} 
+        <ul id="messages" class="list-unstyled">
+        {% for message in messages %}
+            <li class="alert alert-success">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+    <div class="solicitacao">
+        <form action="/enviar" method="post" class="form-control">
+        <p><B>Endereço de coleta: </B>{{ rua_entrega }}, {{ casa_coleta }}, {{ bairro_entrega }}, {{cidade_entrega}}, {{ estado_entrega }}</p>
+        <p><B>Endereço de entrega: </B>{{ rua }}, {{ casa_entrega }}, {{ bairro}}, {{cidade}}, {{ estado }}</p>
+        <p><B>Oque sera transportado: </B>{{itens_entrega}}</p>
+        <p><B>veículo: </B>{{veiculo}}</p>
+        <p><B>Distância: </B>{{distancia_total}} KM</p>
+        <p><B>Total: </B>{{valor_total}} R$</p>
+        <p><button class="btn-confirmar" type="submit">Confirmar pedido</button></p>
+        </form>
+    </div>
+    <div class="mapa">
+        <iframe src="/map" width="450" height="270" >
+        </iframe>
+    </div>
+{% endblock %}

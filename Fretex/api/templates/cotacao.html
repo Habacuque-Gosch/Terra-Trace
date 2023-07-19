@@ -1,0 +1,42 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %} 
+        <ul id="messages" class="list-unstyled">
+        {% for message in messages %}
+            <li class="alert alert-success">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+    <div class="endereco-busca">
+        <form action="/calcula" method="post" class="form-control">
+            <div class="endereco-coleta">
+                <label for="">Local de coleta(CEP)</label>
+                <input type="number" placeholder="Exemplo: 88133000" id="cep1" name="cep1">
+                <label for="">Local de entrega(CEP)</label>
+                <input type="number" placeholder="Exemplo: 88133000" id="cep" name="cep">
+                <label for="">Número da casa ou andar(coleta)</label>
+                <input type="number" placeholder="Exemplo: 10" id="numero" name="numero">
+                <label for="">Número da casa ou andar(entrega)</label>
+                <input type="number"placeholder="Exemplo: 15" id="numero1" name="numero1">
+                <label for="">Itens a serem transportados(Opcional)</label>
+                <input type="text" placeholder="Exemplo: Buque de flores" id="itens" name="itens">
+                <select id="veiculo" name="veiculo">
+                    <option value="">Escolha o tipo de veiculo</option>
+                    <option value="moto">Moto</option>
+                    <option value="carro">Carro</option>
+                    <option value="caminhao">Caminhão</option>
+                </select>
+                <select id="servicos" name="servicos">
+                    <option value="">Escolha o tipo de carga</option>
+                    <option value="transporte">Transporte de itens</option>
+                    <option value="mudanca1">Mudança pequena</option>
+                    <option value="mudanca2">Mudança média</option>
+                    <option value="mudanca3">Mudança grande</option>
+                </select>
+                <button class="btn-primary" type="submit">Continuar</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
