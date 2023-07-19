@@ -6,16 +6,23 @@
 
 ## Descrição do projeto
  <p align="justify">
-Este projeto tem como objetivo obter endereço detalhado a partir de um cep, com está API desenvolvida em flask você será
-capaz de ter dados preciosos de um endereço apenas digitando o cep, você obtera o nome da rua, bairro, município, estado
-ibge, ddd, siafi.
+Este projeto tem como objetivo obter endereço detalhado a partir de um cep, com está API que foi desenvolvida em Python com o framework
+Flask e Folium. Aonde você será capaz de ter dados preciosos de um endereço apenas digitando o cep, você obtera os seguintes Dados: nome da rua, bairro, município, estado, ibge, ddd, siafi. Além disso você também poderá ver a localização do cep digitado no mapa e também poderá ver a sua localização exata se desejar e por fim calcular a distância entre dois ceps.
 <div>
-    
+ 
 ## Funcionalidades
 
-:heavy_check_mark: `Funcionalidade 1:` logar
+:heavy_check_mark: `Funcionalidade 1:` Extrair dados detalhado de um cep
 
-:heavy_check_mark: `Funcionalidade 2:` adicionar jogos
+:heavy_check_mark: `Funcionalidade 2:` Interagir com o mapa
+
+:heavy_check_mark: `Funcionalidade 3:` Ver a localização no mapa do cep digitado
+
+:heavy_check_mark: `Funcionalidade 3:` Calcular a distância entre dois ceps
+
+:heavy_check_mark: `Funcionalidade 4:` Ver a sua localização no mapa se desejar
+
+
         
 <video width="420" height="340" controls="controls">
     <source src="./filme.mp4" type="video/mp4">
@@ -23,15 +30,16 @@ ibge, ddd, siafi.
  
 <div align='center'>
     <h1>Aplicação<h1>
-    <a href="https://gamelist-zeta.vercel.app">gamelist.com</a>
+    <a href="https://fretex-cotacao.vercel.app/">API Cep Info</a>
 </div>
             
 ## Ferramentas utilizadas
 
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white) 
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white")
+![Folium](https://img.shields.io/badge/Folium-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![BootStrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
 
    
 ### Você também me encontra em:
@@ -44,5 +52,4 @@ ibge, ddd, siafi.
  
 <h2>Guia</h2>
 
-coloque seu nome no campo de nome de usuario
-e a senha digite a seguinte: alohomora
+Acesse o link da aplicação e digite o cep que deseja extrair as informações
