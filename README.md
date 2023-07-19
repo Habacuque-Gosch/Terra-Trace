@@ -7,7 +7,8 @@
 ## Descrição do projeto
  <p align="justify">
 Este projeto tem como objetivo obter endereço detalhado a partir de um cep, com está API desenvolvida em flask você será
-capaz de ter dados preciosos de um endereço apenas digitando o cep, você obtera o nome da rua, bairro, estado.
+capaz de ter dados preciosos de um endereço apenas digitando o cep, você obtera o nome da rua, bairro, município, estado
+ibge, ddd, siafi.
 <div>
     
 ## Funcionalidades
