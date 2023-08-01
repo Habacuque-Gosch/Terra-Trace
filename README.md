@@ -30,7 +30,7 @@ Flask e Folium. Aonde você será capaz de ter dados preciosos de um endereço a
  
 <div align='center'>
     <h1>Aplicação<h1>
-    <a href="https://fretex-cotacao.vercel.app/">API Cep Info</a>
+    <a href="https://cotacao-gratis.vercel.app/">API Cep Info</a>
 </div>
             
 ## Ferramentas utilizadas
