@@ -111,15 +111,8 @@ def calcula():
     #TIPO DE VEICULO SELECIONADO
     tipo_veiculo = request.form['veiculo']
 
-    if tipo_veiculo == "":
-        flash("Selecione um veículo")
-        return render_template('cotacao.html')
-    
     #TIPO DE FRETE
     tipo_frete = request.form['servicos']
-    if tipo_frete == "":
-        flash("Selecione o tipo de carga")
-        return render_template('cotacao.html')
 
     #CONVERTENDO CEP EM CORDENADAS
     CEP_STRING_COLETA = str(InfoColeta_entrega.cep_coleta)
