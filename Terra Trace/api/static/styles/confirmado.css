@@ -1,0 +1,84 @@
+
+
+.resumo-pedido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--cor-texto2);
+    background-color: var(--cor-destaque);
+    margin-top: 10%;
+    margin-left: 18%;
+    width: 55em;
+    height: 30em;
+    border-radius: 12px;
+    gap: 1em;
+}
+
+.dados-resumo {
+    display:flexbox;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+b {
+    color: var(--cor-texto2);
+    font-size: 20px;
+}
+
+.confirmado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2em;
+    font-size: 14px;
+}
+
+.primary {
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.5s;
+    background-color: var(--cor-azul-detalhes);
+    border: 1px solid var(--cor-aqua-detalhes);
+    border-radius: 35px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    width: 300px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.primary:hover {
+    background-color: rgb(38, 103, 156);
+}
+
+@media screen and (max-width: 480px) {
+    .resumo-pedido {
+        margin-top: 30%;
+        margin-left: 5%;
+        height: 32em;
+        width: 22em;
+        border-radius: 12px;
+        gap: 7px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .dados {
+        padding: 4px;
+        font-size: 16px;
+    }
+    b {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-destaque: #006DD1;
+    --azul-claro: #65aef3;
+    --preto-padrao: #092844;
+    --cinza-padrao: #d8d8d8;
+    --branco-padrao: rgb(255, 255, 255);
+    --linear-azul-roxo:  linear-gradient(270deg, #8c4eff 0%, #006DD1 49.48%, #0086D1 94.79%);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-texto2);
+}
+
+:root {
+    --cor-destaque: #3d66a5;
+    --cor-texto: #0d091f;
+    --cor-texto2: #ffffff;
+    --cor-azul-detalhes: #6BAEFE;
+    --cor-aqua-detalhes: #85CDD8;
+}
+
+
+/* Scrollbar personalizada */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-destaque);
+    border-radius: 5px;
+}
+
+
+main {
+    background-color: var(--branco-padrao);
+    height: 100%;
+    text-align: center;
+    padding: 2em 0;
+}
+
+main h2 {
+    text-align: center;
+    padding: 0 1.5em;
+    padding-bottom: 0;
+}
+
+main a {
+    text-decoration: none;
+    color: gray;
+    transition: .5s;
+    font-weight: bolder;
+}
+
+main a:hover {
+    color: var(--cor-destaque);
+}
+
+.container-cotacao {
+    color: var(--branco-padrao);
+    background: var(--linear-azul-roxo);
+    margin: 2em 1em;
+    border-radius: 10px;
+    height: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-cotacao div {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-cotacao h4 {
+    margin-top: 1em;
+}
+
+.container-cotacao a {
+    background-color: var(--azul-claro);
+    margin-top: 1.4em;
+    padding: 1em 3em;
+    color: var(--branco-padrao);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+hr {
+    width: 20%;
+    margin: 1em 0;
+}
+
+.container-cotacao a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(88, 123, 199);
+}
+
+
+@media (min-width: 600px) {
+    main {
+        padding: 2em 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .container-cotacao {
+        height: auto;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        padding: 2em 30%;
+        height: auto;
+    }
+
+    .container-cotacao {
+        height: auto;
+    }
+
+
+
+}

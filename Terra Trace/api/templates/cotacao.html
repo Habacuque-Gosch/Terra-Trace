@@ -1,0 +1,45 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<main>
+    <h2>Faça sua cotação de maneira rápida e gratuita!</h2>
+    <section class="container-cotacao">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %} 
+            {% for message in messages %}
+                <li class="alert">{{ message }}</li>
+            {% endfor %}    
+        {% endif %}
+        {% endwith %}
+        <h3>Endereço de coleta</h3>
+        <form action="/cotacao" method="post">
+                <label for="">CEP</label>
+                <input type="text" placeholder="Ex: 88100500" id="cep1" name="cep1" required>
+                <label for="">Número</label>
+                <input type="text" placeholder="Ex: 1054" id="numero" name="numero" required>
+            <h3>Endereço de entrega</h3>
+                <label for="">CEP</label>
+                <input type="text" placeholder="Ex: 88100500" id="cep" name="cep" required> 
+                <label for="">Número</label>
+                <input type="text" placeholder="Ex: 1054" id="numero1" name="numero1" required>
+            <hr>
+            <h3>Itens a serem transportados</h3>
+            <input type="text" placeholder="Ex: Fogão e geladeira" name="itens">
+            <select id="veiculo" name="veiculo" required>
+                <option class="tipo" value="">Escolha o tipo de veiculo</option>
+                <option value="moto">Moto</option>
+                <option value="carro">Carro</option>
+                <option value="caminhao">Caminhão</option>
+            </select>
+            <select id="servicos" name="servicos" required>
+                <option value="">Escolha o tipo de carga</option>
+                <option value="transporte">Transporte de itens</option>
+                <option value="mudanca1">Mudança pequena</option>
+                <option value="mudanca2">Mudança média</option>
+                <option value="mudanca3">Mudança grande</option>
+            </select>
+            <button class="btn-primary" type="submit">Fazer cotação</button>
+        </form>
+    </section>
+    <a>Precisa de ajuda? Entre em contato</a>
+</main>
+{% endblock %}

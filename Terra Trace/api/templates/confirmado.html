@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    <div class="resumo-pedido">
+        <h1>Pedido confirmado</h1>
+        <h3>Resumo do pedido</h3>
+        <div class="dados-resumo">
+            <p class="dados"><B>Endereço de coleta: </B>{{ coleta }}</p>
+            <p class="dados"><B>Endereço de entrega: </B>{{ entrega }}</p>
+            <p class="dados"><B>Oque sera transportado: </B>{{itens}}</p>
+            <p class="dados"><B>veículo: </B>{{veiculo}}</p>
+            <p class="dados"><B>Distância: </B>{{distancia}} KM</p>
+            <p class="dados"><B>Total: </B>{{Total}} R$</p>
+        </div>
+        <div class="confirmado">
+            <form action="https://www.fretexsolucoes.com/" method="post" class="form-control">
+            <br><button class="primary" type="submit">Voltar à pagina inicial</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

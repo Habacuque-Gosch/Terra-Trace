@@ -1,0 +1,56 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import url(cotacao.css);
+/* @import url(solicitacao.css); */
+@import url(confirmado.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-destaque: #006DD1;
+    --azul-claro: #65aef3;
+    --preto-padrao: #092844;
+    --cinza-padrao: #d8d8d8;
+    --branco-padrao: rgb(255, 255, 255);
+    --linear-azul-roxo:  linear-gradient(270deg, #8c4eff 0%, #006DD1 49.48%, #0086D1 94.79%);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-texto2);
+}
+
+:root {
+    --cor-destaque: #3d66a5;
+    --cor-texto: #0d091f;
+    --cor-texto2: #ffffff;
+    --cor-azul-detalhes: #6BAEFE;
+    --cor-aqua-detalhes: #85CDD8;
+}
+
+
+/* Scrollbar personalizada */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-destaque);
+    border-radius: 5px;
+}
+
+
