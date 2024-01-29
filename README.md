@@ -30,7 +30,7 @@ Flask e Folium. Aonde você será capaz de ter dados preciosos de um endereço a
  
 <div align='center'>
     <h1>Aplicação<h1>
-     <img src='capa.png'>
+     <img src='capa.png' width="320" height="340">
     <a href="https://terra-trace-app.vercel.app//">Terra Trace</a>
 </div>
             
